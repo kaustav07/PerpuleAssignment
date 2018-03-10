@@ -105,7 +105,6 @@ public class AudioPresenter<V extends AudioContract.View> extends BasePresenterI
                         if (isConnectedToInternet && WAITING_FOR_NETWORK) {
                             WAITING_FOR_NETWORK = false;
                             startSongFetch();
-                            getMvpView().hideProgress();
                         }
                     }
                 });
